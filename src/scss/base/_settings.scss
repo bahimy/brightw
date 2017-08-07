@@ -1,0 +1,57 @@
+////// Color section ///////
+
+$color-crimson: rgb(212, 40, 25);
+$color-black: rgb(100, 100, 100);
+$color-white: rgb(0, 0, 0);
+
+$color-accent: $color-crimson;
+$color-strong: lighten($color-black, 10%);
+$color-basic: lighten($color-strong, 20%);
+$color-faint: lighten($color-basic, 20%);
+
+
+
+
+
+////// Typography section //////
+
+html {
+  font-size: 62.5%;
+}
+
+// seed fot font sizes generation
+$text-initial-size: 5em;
+
+// forms array of proportional tex sizez
+$text-sizes: formTextSizes($text-initial-size);
+
+$text-alpha: nth($text-sizes, 1);
+$text-beta: nth($text-sizes, 2);
+$text-gamma: nth($text-sizes, 3);
+$text-delta: nth($text-sizes, 4);
+$text-epsilon: nth($text-sizes, 5);
+$text-zeta: nth($text-sizes, 6);
+
+h1 {
+  font-size: $text-alpha;
+}
+
+h2 {
+  font-size: $text-alpha;
+}
+
+h3 {
+  font-size: $text-alpha;
+}
+
+h4 {
+  font-size: $text-alpha;
+}
+
+h5 {
+  font-size: $text-alpha;
+}
+
+h6 {
+  font-size: $text-alpha;
+}

@@ -1,0 +1,22 @@
+.navbar {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar__container {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navbar__item {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar__item--main {
+  @extend .navbar__item;
+  font-size: $text-delta;
+  padding: 0.5em 1em;
+  border: 1px solid gray;
+}

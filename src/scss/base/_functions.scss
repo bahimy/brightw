@@ -1,0 +1,8 @@
+@function formTextSizes($init) {
+  $result: ();
+  @for $i from 0 through 9 {
+    $result: append($result, $init);
+    $init: $init * 0.75;
+  }
+  @return $result;
+}
