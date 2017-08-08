@@ -1,0 +1,32 @@
+%button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button--social {
+  @extend %button;
+  line-height: 1em;
+  font-size: $text-delta;
+  color: $color-canvas;
+  background-color: $color-faint;
+  width: $text-delta / 2;
+  height: $text-delta / 2;
+  padding: 0.1em;
+  border-radius: $text-delta / 2;
+}
+
+.button--complex {
+  @extend %button;
+  line-height: 1em;
+  background-color: $color-accent;
+  background-clip: padding-box;
+  color: $color-black;
+  font-size: $text-delta;
+  width: $text-delta / 2;
+  height: $text-delta / 2;
+  padding: 0.3em;
+  border-radius: $text-delta / 2 + 1em;
+  border: 7px solid rgba($color-black, .3);
+  margin-top: -1.2em;
+}

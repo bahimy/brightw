@@ -1,13 +1,14 @@
 ////// Color section ///////
 
 $color-crimson: rgb(212, 40, 25);
-$color-black: rgb(100, 100, 100);
-$color-white: rgb(0, 0, 0);
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
 
 $color-accent: $color-crimson;
-$color-strong: lighten($color-black, 10%);
+$color-strong: lighten($color-black, 25%);
 $color-basic: lighten($color-strong, 20%);
 $color-faint: lighten($color-basic, 20%);
+$color-canvas: $color-white;
 
 
 
@@ -15,14 +16,28 @@ $color-faint: lighten($color-basic, 20%);
 
 ////// Typography section //////
 
+@font-face {
+  font-family: "fontawesome";
+  src: url('../fonts/fontawesome-webfont.eot') format('embedded-opentype');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+       url('../fonts/fontawesome-webfont.woff') format('woff'),
+       url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+       url('../fonts/fontawesome-webfont.svg') format('svg');
+}
+
+$text-sans: Tahoma, Arial, sans-serif;
+$text-icon: fontawesome;
+
 html {
   font-size: 62.5%;
+  font-family: $text-sans;
 }
 
 // seed fot font sizes generation
 $text-initial-size: 5em;
 
-// forms array of proportional tex sizez
+// forms array of proportional tex sisez
 $text-sizes: formTextSizes($text-initial-size);
 
 $text-alpha: nth($text-sizes, 1);
@@ -32,26 +47,38 @@ $text-delta: nth($text-sizes, 4);
 $text-epsilon: nth($text-sizes, 5);
 $text-zeta: nth($text-sizes, 6);
 
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  text-align: center;
+}
+
 h1 {
   font-size: $text-alpha;
 }
 
 h2 {
-  font-size: $text-alpha;
+  font-size: $text-beta;
 }
 
 h3 {
-  font-size: $text-alpha;
+  font-size: $text-gamma;
 }
 
 h4 {
-  font-size: $text-alpha;
+  font-size: $text-delta;
 }
 
 h5 {
-  font-size: $text-alpha;
+  font-size: $text-epsilon;
+  margin: 0;
 }
 
 h6 {
-  font-size: $text-alpha;
+  font-size: $text-zeta;
+}
+
+.fa {
+  font-family: fontawesome;
 }

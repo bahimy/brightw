@@ -79,7 +79,7 @@ gulp.task('css', ['images', 'copyfonts'], function() {
             precision: 3,
             errLogToConsole: true
         })).on('error', swallowError)
-        .pipe(postcss(postCssOpts))
+        .pipe(postcss(postCssOpts)).on('error', swallowError)
         .pipe(gulp.dest(folder.build + 'css/'))
 })
 

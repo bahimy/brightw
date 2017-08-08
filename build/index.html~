@@ -10,23 +10,30 @@
 </head>
 
 <body>
-  <ul class="navbar">
-    <li class="navbar__container">
-      <a href="#" class="navbar__item--main">home</a>
+  <!--ul class="navbar">
+    <li class="navbar__container--delim">
+      <a href="#" class="navbar__item--filter">home</a>
+    </li><li class="navbar__container--delim">
+      <a href="#" class="navbar__item--filter">portfolio</a>
+    </li><li class="navbar__container--delim">
+      <a href="#" class="navbar__item--filter">support</a>
+    </li><li class="navbar__container--delim">
+      <a href="#" class="navbar__item--filter">blog</a>
+    </li><li class="navbar__container--delim">
+      <a href="#" class="navbar__item--filter">contacts</a>
     </li>
-    <li class="navbar__container">
-      <a href="#" class="navbar__item">portfolio</a>
-    </li>
-    <li class="navbar__container">
-      <a href="#" class="navbar__item">support</a>
-    </li>
-    <li class="navbar__container">
-      <a href="#" class="navbar__item">blog</a>
-    </li>
-    <li class="navbar__container">
-      <a href="#" class="navbar__item">contacts</a>
-    </li>
-  </ul>
+  </ul-->
+  <h3>Welcome! This is Bright, a very clean Wordpress psd file theme<br>That makes it easy to showcase your work</h3>
+  <div class="canvas">
+    <div class="sample__container">
+      <h5>Etiam ullamcorper</h5>
+      <p class="sample__category">Graphic design</p>
+      <div class="sample__picture"></div>
+      <div class="sample__zoom">
+        <a class="fa button--complex" href="#">&#xf002;</a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

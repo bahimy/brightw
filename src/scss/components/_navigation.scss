@@ -6,17 +6,45 @@
 
 .navbar__container {
   list-style-type: none;
+  display: inline;
+}
+
+.navbar__container--delim {
+  @extend .navbar__container;
+  font-size: $text-zeta;
+
+  &:nth-child(1n+2) {
+
+    &:before {
+      content: "/";
+      color: $color-basic;
+    }
+  }
+}
+
+%navbar__item {
+  text-decoration: none;
+  text-transform: uppercase;
   display: inline-block;
 }
 
-.navbar__item {
-  text-decoration: none;
-  text-transform: uppercase;
+.navbar__item--main {
+  @extend %navbar__item;
+  font-size: $text-delta;
+  margin: 0.5em 1em 0.6em;
+  padding-bottom: 0.4em;
+  color: $color-basic;
+
+  &:hover {
+    border-bottom: 1px solid $color-accent;
+  }
 }
 
-.navbar__item--main {
-  @extend .navbar__item;
-  font-size: $text-delta;
-  padding: 0.5em 1em;
-  border: 1px solid gray;
+.navbar__item--filter {
+  @extend %navbar__item;
+  color: $color-basic;
+
+  &:hover {
+    color: $color-accent;
+  }
 }
