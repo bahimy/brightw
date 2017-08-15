@@ -510,3 +510,52 @@ h6 {
 .sample__zoom {
   position: absolute;
   right: 10px; }
+
+.pagination {
+  font-size: 1.582em; }
+
+.pagination__button {
+  display: inline-block;
+  border: 1px solid #737373;
+  border-radius: 0.3em;
+  -webkit-box-shadow: 1px 1px 3px #a6a6a6;
+          box-shadow: 1px 1px 3px #a6a6a6; }
+
+.pagination__arrow {
+  text-decoration: none;
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  text-align: center;
+  line-height: 1.4em;
+  color: #737373;
+  border: 1px solid white;
+  border-radius: 0.2em;
+  font-weight: bold;
+  background-color: #a6a6a6;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a6a6a6), to(white));
+  background-image: linear-gradient(to top, #a6a6a6, white);
+  text-shadow: 1px 1px white; }
+
+.pagination__container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block; }
+
+.pagination__item {
+  display: inline-block; }
+
+.pagination__link {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #a6a6a6;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  color: #a6a6a6;
+  border-radius: 0.2em; }
+  .pagination__link:hover {
+    color: #737373;
+    background-color: white; }
