@@ -7,7 +7,7 @@ $color-white: rgb(255, 255, 255);
 $color-accent: $color-crimson;
 $color-strong: lighten($color-black, 25%);
 $color-basic: lighten($color-strong, 20%);
-$color-faint: lighten($color-basic, 20%);
+$color-faint: lighten($color-basic, 30%);
 $color-canvas: $color-white;
 
 
@@ -81,4 +81,14 @@ h6 {
 
 .fa {
   font-family: fontawesome;
+}
+
+
+
+
+
+////// Miscellaneous //////
+
+* {
+  box-sizing: border-box;
 }

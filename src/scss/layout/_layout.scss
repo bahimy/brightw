@@ -1,0 +1,79 @@
+.l-root {
+  height: 100%;
+}
+
+.l-body {
+  padding-top: 50px;
+}
+
+.l-main {
+  background-color: purple;
+}
+
+
+
+
+
+
+////// Navigation section //////
+
+.l-navbar {
+  background-color: $color-canvas;
+  box-shadow: 0px 0px 10px $color-faint;
+  height: 80px;
+}
+
+.l-navbar__container {
+  width: 1024px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.l-navbar__links {
+  padding-top: 18px;
+  margin-left: 120px;
+}
+
+.l-navbar__logo {
+  float: left;
+  margin-top: -20px;
+  margin-left: -20px;
+  width: 120px;
+  height: 120px;
+  border: 8px solid rgba($color-basic, .3);
+  border-radius: 60px;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-color: $color-accent;
+  background-image:
+    url("../images/logo.svg"),
+    repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 9px,
+      darken($color-accent, 5) 10px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 9px,
+      darken($color-accent, 5) 10px
+    );
+  background-repeat: no-repeat, repeat, repeat;
+  background-size: 85px, auto, auto;
+}
+
+.l-buttons {
+  float: right;
+  margin-top: 0.7em;
+}
+
+
+
+
+
+////// Showcase section //////
+
+.l-prescont {
+  width: 200px;
+}

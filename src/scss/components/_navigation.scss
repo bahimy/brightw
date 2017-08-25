@@ -1,16 +1,21 @@
-.navbar {
+.navmenu {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.navbar__container {
+.navmenu--header {
+  @extend .navmenu;
+  margin-right: 27%;
+}
+
+.navmenu__container {
   list-style-type: none;
   display: inline;
 }
 
-.navbar__container--delim {
-  @extend .navbar__container;
+.navmenu__container--delim {
+  @extend .navmenu__container;
   font-size: $text-zeta;
 
   &:nth-child(1n+2) {
@@ -22,29 +27,47 @@
   }
 }
 
-%navbar__item {
+%navmenu__item {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
 }
 
-.navbar__item--main {
-  @extend %navbar__item;
+.navmenu__item--main {
+  @extend %navmenu__item;
   font-size: $text-delta;
-  margin: 0.5em 1em 0.6em;
+  margin: 0.5em 0.5em 0.6em;
   padding-bottom: 0.4em;
   color: $color-basic;
+  letter-spacing: 0.05em;
 
   &:hover {
     border-bottom: 1px solid $color-accent;
   }
 }
 
-.navbar__item--filter {
-  @extend %navbar__item;
+.navmenu__item--filter {
+  @extend %navmenu__item;
   color: $color-basic;
 
   &:hover {
     color: $color-accent;
   }
+}
+
+
+
+
+
+/////// Social buttons //////
+
+.buttonblock {
+  padding: 0;
+  margin: 0;
+}
+
+.buttonblock__button {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 0.2em;
 }

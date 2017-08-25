@@ -29,7 +29,7 @@ function swallowError (error) {
 // Image processing
 gulp.task('images', function() {
     var out = folder.build + 'images'
-    return gulp.src(folder.src + 'images/*/**')
+    return gulp.src(folder.src + 'images/**/*')
         .pipe(newer(out))
         .pipe(imagemin( {optimizationLevel: 5} ))
         .pipe(gulp.dest(out))
@@ -39,8 +39,8 @@ gulp.task('images', function() {
 gulp.task('html', ['images', 'copyfonts'], function() {
     var
         out = folder.build,
-        page = gulp.src(folder.src + 'html/**/*')
-            .pipe(newer(out)).on('error', swallowError)
+        page = gulp.src(folder.src + 'html/**/*').on('error', swallowError)
+            .pipe(newer(out))
 
     if (!devBuild) page = page.pipe(htmlclean())
 
@@ -49,7 +49,7 @@ gulp.task('html', ['images', 'copyfonts'], function() {
 
 // JS processing
 gulp.task('js', function() {
-    var jsbuild = gulp.src(folder.src + 'js/**/*')
+    var jsbuild = gulp.src(folder.src + 'js/**/*').on('error', swallowError)
         .pipe(deporder())
         .pipe(concat('main.js'))
 

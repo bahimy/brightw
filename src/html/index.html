@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html class="l-root js-root">
 
 <head>
   <meta charset="utf-8" />
@@ -9,31 +9,81 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
-<body>
-  <!--ul class="navbar">
-    <li class="navbar__container--delim">
-      <a href="#" class="navbar__item--filter">home</a>
-    </li><li class="navbar__container--delim">
-      <a href="#" class="navbar__item--filter">portfolio</a>
-    </li><li class="navbar__container--delim">
-      <a href="#" class="navbar__item--filter">support</a>
-    </li><li class="navbar__container--delim">
-      <a href="#" class="navbar__item--filter">blog</a>
-    </li><li class="navbar__container--delim">
-      <a href="#" class="navbar__item--filter">contacts</a>
-    </li>
-  </ul-->
-  <h3>Welcome! This is Bright, a very clean Wordpress psd file theme<br>That makes it easy to showcase your work</h3>
-  <!-- div class="canvas">
-    <div class="sample">
-      <h5>Etiam ullamcorper</h5>
-      <p class="sample__category">Graphic design</p>
-      <div class="sample__picture"></div>
-      <div class="sample__zoom">
-        <a class="fa button--complex" href="#">&#xf002;</a>
+<body class="l-body"> 
+  <header>
+
+    <nav class="l-navbar"> 
+      <div class="l-navbar__container"> 
+
+        <a href ="#" class="l-navbar__logo js-logo"></a>
+
+        <div class="l-navbar__links">
+
+          <ul class="buttonblock l-buttons">
+            <li class="buttonblock__button"><a href="#" class="fa button--social">&#x0f09a;</a></li>
+            <li class="buttonblock__button"><a href="#" class="fa button--social">&#x0f099;</a></li>
+            <li class="buttonblock__button"><a href="#" class="fa button--social">&#x0f17d;</a></li>
+            <li class="buttonblock__button"><a href="#" class="fa button--social">&#x0f1b4;</a></li>
+            <li class="buttonblock__button"><a href="#" class="fa button--social">&#x0f0d5;</a></li>
+            <li class="buttonblock__button"><a href="#" class="fa button--social">&#x0f09e;</a></li>
+          </ul>
+
+          <ul class="navmenu--header">
+            <li class="navmenu__container">
+              <a class="navmenu__item--main" href="#">home</a>
+            </li>
+            <li class="navmenu__container">
+              <a class="navmenu__item--main" href="#">portfolio</a>
+            </li>
+            <li class="navmenu__container">
+              <a class="navmenu__item--main" href="#">support</a>
+            </li>
+            <li class="navmenu__container">
+              <a class="navmenu__item--main" href="#">blog</a>
+            </li>
+            <li class="navmenu__container">
+              <a class="navmenu__item--main" href="#">contact</a>
+            </li>
+          </ul>
+        </div><!-- l-navbar__links -->
+      </div><!-- l-navbar__container --> 
+    </nav>
+
+    <h1 class="header--prima">Welcome! This is <strong>Bright</strong>, a very clean Wordpress psd file theme<br>That makes it easy to showcase your work</h1>
+  </header>
+
+  <main role="main l-main">
+    <ul class="navmenu">
+      <li class="navmenu__container--delim">
+        <a href="#" class="navmenu__item--filter">all</a>
+      </li><li class="navmenu__container--delim">
+        <a href="#" class="navmenu__item--filter">painting</a>
+      </li><li class="navmenu__container--delim">
+        <a href="#" class="navmenu__item--filter">traditional</a>
+      </li><li class="navmenu__container--delim">
+        <a href="#" class="navmenu__item--filter">vector</a>
+      </li><li class="navmenu__container--delim">
+        <a href="#" class="navmenu__item--filter">3d</a>
+      </li>
+    </ul>
+
+    <div class="l-prescont">
+      <div class="sample">
+        <h5>Etiam ullamcorper</h5>
+        <p class="sample__category">Graphic design</p>
+        <div class="sample__picture"></div>
+        <div class="sample__zoom">
+          <a class="fa button--complex" href="#">&#xf002;</a>
+        </div>
       </div>
     </div>
-  </div -->
+
+  </main>
+
+
+  <!-- div class="canvas">
+    </div>
+  </div>
 
   <div class="pagination">
     <div class="pagination__button">
@@ -59,8 +109,9 @@
     <div class="pagination__button">
       <a class="pagination__arrow" href="#" title="Start">&#xf101;</a>
     </div>
-  </div>
+  </div -->
 
+  <script charset="utf-8" src="js/main.js"></script>
 </body>
 
 </html>
