@@ -1,4 +1,4 @@
-(function() {
+function fixBackground() {
     var addEvent = function(object, type, callback) {
         if (object == null || typeof(object) == 'undefined') return;
         if (object.addEventListener) {
@@ -14,15 +14,15 @@
         var elementCoordinates = element.getBoundingClientRect();
         var backgroundOffset = {};
 
-        backgroundOffset.x = Math.ceil(elementCoordinates.left)
-            + window.pageXOffset;
-        backgroundOffset.y = Math.ceil(elementCoordinates.top)
-            + window.pageYOffset;
+        backgroundOffset.x = ((elementCoordinates.left)
+            + window.pageXOffset) % 10;
+        backgroundOffset.y = ((elementCoordinates.top)
+            + window.pageYOffset) % 10;
 
         return backgroundOffset;
     }
 
-    var generatePositioningValue = function() {
+    var generatePositioningString = function() {
         var result = '';
 
         for (var arg in arguments) {
@@ -43,9 +43,21 @@
         return result;
     }
 
-    var elem = document.querySelector('.js-logo');
-    elem.style.backgroundPosition =
-        generatePositioningValue("center", getBackgroundOffset(elem));
+    var updateDocument = function() {
+        var elem = document.querySelector('.js-logo');
+        elem.style.backgroundPosition =
+            generatePositioningString("center", getBackgroundOffset(elem));
 
-    // addEvent(window, 'resize', updateBackgroundPosition);
-})();
+        var searchButtons = document.querySelectorAll('.js-zoom');
+        searchButtons.forEach(function(current) {
+            current.style.backgroundPosition =
+                generatePositioningString(getBackgroundOffset(current));
+        });
+    }
+
+    updateDocument();
+
+    addEvent(window, 'resize', updateDocument);
+};
+
+fixBackground();

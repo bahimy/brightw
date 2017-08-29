@@ -1,15 +1,20 @@
-.canvas { ///////////// Remove it!
-  width: 35%;
-  // background-color: yellow;
-}
-
 .sample {
+  float: left;
+  width: 23.5%;
+  margin-right: 2%;
+  margin-bottom: 50px;
   position: relative;
+  color: $color-strong;
+
+  &:nth-child(4n+4) {
+    margin-right: 0;
+  }
 }
 
 .sample__category {
   font-size: $text-zeta;
   margin-top: 0.2em;
+  color: $color-basic;
 }
 
 .sample__picture {

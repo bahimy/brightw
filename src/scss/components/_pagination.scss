@@ -1,5 +1,12 @@
 .pagination {
   font-size: $text-epsilon;
+  margin: 0 auto;
+  display: table;
+}
+
+.pagination__centerer {
+  display: table-cell;
+  vertical-align: center;
 }
 
 .pagination__button {
@@ -7,6 +14,7 @@
   border: 1px solid $color-basic;
   border-radius: 0.3em;
   box-shadow: 1px 1px 3px $color-faint;
+  cursor: pointer;
 }
 
 .pagination__arrow {
@@ -46,6 +54,8 @@
   line-height: 1.5em;
   color: $color-faint;
   border-radius: 0.2em;
+  cursor: pointer;
+  margin: 0 2px;
 
   &:hover {
     color: $color-basic;
