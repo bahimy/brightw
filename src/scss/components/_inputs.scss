@@ -1,3 +1,18 @@
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
 %button {
   display: block;
   text-decoration: none;
@@ -47,4 +62,41 @@
       transparent 9px,
       darken($color-accent, 5) 10px
     );
+}
+
+.button--invert {
+  @extend %button;
+  background-color: $color-faint;
+}
+
+.form {
+  font-size: $text-zeta;
+}
+
+.form__set {
+  border-width: 0;
+  padding: 0;
+  margin: 1em 0;
+}
+
+.form__text {
+  @include placeholder($color-accent);
+  font-style: italic;
+  color: $color-accent;
+  background-color: rgba($color-strong, .2);
+  padding: 0.5em;
+  border-width: 2px;
+  margin: 0;
+  width: 85.5%;
+}
+
+.form__submit {
+  font-style: italic;
+  color: $color-accent;
+  background-color: rgba($color-strong, .2);
+  padding: 0.5em;
+  border-width: 2px;
+  border-style: inset;
+  margin: 0;
+  width: 13%;
 }

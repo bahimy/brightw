@@ -78,7 +78,26 @@
   width: 1024px;
   margin: 0 auto;
   margin-top: 3em;
+  padding-bottom: 7em;
 }
 
-.l-prescont__container {
+
+
+
+
+////// Information section //////
+
+.l-info {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.l-info__column {
+  width: 28%;
+  float: left;
+
+  &:nth-child(1n+2) {
+    margin-left: 8%;
+  }
+
 }

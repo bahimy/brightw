@@ -9,7 +9,23 @@
   word-spacing: 0.1em;
 }
 
+p {
+  font-size: $text-zeta;
+  color: $color-strong;
+}
+
 strong {
   color: $color-accent;
   font-weight: normal;
+}
+
+.header--info {
+  display: block;
+  min-width: 100%;
+  background-color: $color-canvas;
+  box-shadow: $boxshadow-string;
+  text-align: center;
+  font-weight: normal;
+  padding: 1em 0;
+  margin-bottom: 1.5em;
 }

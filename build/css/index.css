@@ -485,7 +485,7 @@ h6 {
   display: inline-block;
   margin: 0 0.2em; }
 
-.button--social, .button--complex {
+.button--social, .button--complex, .button--invert {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -518,6 +518,44 @@ h6 {
   background-clip: padding-box;
   background-origin: border-box;
   background-image: repeating-linear-gradient(to right, transparent, transparent 9px, #bd2416 10px), repeating-linear-gradient(to bottom, transparent, transparent 9px, #bd2416 10px); }
+
+.button--invert {
+  background-color: #bfbfbf; }
+
+.form {
+  font-size: 1.187em; }
+
+.form__set {
+  border-width: 0;
+  padding: 0;
+  margin: 1em 0; }
+
+.form__text {
+  font-style: italic;
+  color: #d42819;
+  background-color: rgba(64, 64, 64, 0.2);
+  padding: 0.5em;
+  border-width: 2px;
+  margin: 0;
+  width: 85.5%; }
+  .form__text::-webkit-input-placeholder {
+    color: #d42819; }
+  .form__text:-moz-placeholder {
+    color: #d42819; }
+  .form__text::-moz-placeholder {
+    color: #d42819; }
+  .form__text:-ms-input-placeholder {
+    color: #d42819; }
+
+.form__submit {
+  font-style: italic;
+  color: #d42819;
+  background-color: rgba(64, 64, 64, 0.2);
+  padding: 0.5em;
+  border-width: 2px;
+  border-style: inset;
+  margin: 0;
+  width: 13%; }
 
 .sample {
   float: left;
@@ -602,6 +640,22 @@ h6 {
     color: #737373;
     background-color: white; }
 
+.searched-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.187em;
+  color: #404040;
+  -webkit-column-count: 2;
+          column-count: 2; }
+
+.searched-list__item:after {
+  content: "";
+  display: block;
+  border-bottom: 1px dashed #737373;
+  width: 5em;
+  margin-top: 0.4em;
+  margin-bottom: 0.8em; }
+
 .l-root {
   height: 100%; }
 
@@ -648,7 +702,18 @@ h6 {
 .l-prescont {
   width: 1024px;
   margin: 0 auto;
-  margin-top: 3em; }
+  margin-top: 3em;
+  padding-bottom: 7em; }
+
+.l-info {
+  width: 1024px;
+  margin: 0 auto; }
+
+.l-info__column {
+  width: 28%;
+  float: left; }
+  .l-info__column:nth-child(1n+2) {
+    margin-left: 8%; }
 
 .header--prima {
   font-size: 3.2em;
@@ -660,6 +725,21 @@ h6 {
   letter-spacing: 0.02em;
   word-spacing: 0.1em; }
 
+p {
+  font-size: 1.187em;
+  color: #404040; }
+
 strong {
   color: #d42819;
   font-weight: normal; }
+
+.header--info {
+  display: block;
+  min-width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px #737373;
+          box-shadow: 0px 0px 10px #737373;
+  text-align: center;
+  font-weight: normal;
+  padding: 1em 0;
+  margin-bottom: 1.5em; }

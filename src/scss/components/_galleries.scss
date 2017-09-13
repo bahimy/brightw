@@ -20,7 +20,7 @@
 .sample__picture {
   background-color: white;
   padding-top: 80%;
-  box-shadow: 0px 0px 10px $color-basic;
+  box-shadow: $boxshadow-string;
 }
 
 .sample__zoom {
