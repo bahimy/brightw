@@ -6,11 +6,6 @@
   padding-top: 50px;
 }
 
-.l-main {
-  background-color: purple;
-}
-
-
 
 
 
@@ -90,6 +85,8 @@
 .l-info {
   width: 1024px;
   margin: 0 auto;
+  padding-bottom: 6em;
+  border-bottom: 1px solid $color-basic;
 }
 
 .l-info__column {
@@ -100,4 +97,17 @@
     margin-left: 8%;
   }
 
+}
+
+
+
+
+
+////// Footer section //////
+
+.l-tail {
+  width: 1024px;
+  text-align: right;
+  margin: 0 auto;
+  padding: 1em 0 5em;
 }

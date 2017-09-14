@@ -87,7 +87,7 @@
         });
     });
 
-    document.querySelector('.js-first').addEventListener('click', function() {
+    document.querySelector('.js-first').addEventListener('click', function(e) {
         toggleWindow(1);
     });
 

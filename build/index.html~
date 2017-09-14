@@ -52,7 +52,7 @@
     <h1 class="header--prima">Welcome! This is <strong>Bright</strong>, a very clean Wordpress psd file theme<br>That makes it easy to showcase your work</h1>
   </header>
 
-  <main role="main l-main">
+  <main class="l-main">
     <ul class="navmenu">
       <li class="navmenu__container--delim">
         <a href="#" class="navmenu__item--filter">all</a>
@@ -191,7 +191,7 @@
       <div class="l-info__column">
         <h5 class="header--info">Find something</h5>
         <p>Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
-        <form class="form" action="" method="post">
+        <form class="form" action="#" method="post">
           <fieldset class="form__set">
             <input class="form__text" type="text" placeholder="Looking for something?" required />
             <button class="form__submit" type="submit">OK</button>
@@ -216,6 +216,13 @@
           <li class="searched-list__item">Vestibulum commodo (9)</li>
           <li class="searched-list__item">Quisque lorem (1)</li>
           <li class="searched-list__item">Vestibulum (23)</li>
+          <li class="searched-list__item">Maecenas (2)</li>
+          <li class="searched-list__item">Curabitur et ligula (12)</li>
+          <li class="searched-list__item">Ut molestie (3)</li>
+          <li class="searched-list__item">Pellentesque facilisis (1)</li>
+          <li class="searched-list__item">Integer aliquam (0)</li>
+          <li class="searched-list__item">Lorem ipsum (1)</li>
+          <li class="searched-list__item">Etiam ullamcorper (3)</li>
         </ul>
       </div>
     </section>

@@ -39,7 +39,8 @@ gulp.task('images', function() {
 gulp.task('html', ['images', 'copyfonts'], function() {
     var
         out = folder.build,
-        page = gulp.src(folder.src + 'html/**/*').on('error', swallowError)
+        page = gulp.src(folder.src + 'html/**/*.html')
+        .on('error', swallowError)
             .pipe(newer(out))
 
     if (!devBuild) page = page.pipe(htmlclean())
@@ -49,7 +50,7 @@ gulp.task('html', ['images', 'copyfonts'], function() {
 
 // JS processing
 gulp.task('js', function() {
-    var jsbuild = gulp.src(folder.src + 'js/**/*').on('error', swallowError)
+    var jsbuild = gulp.src(folder.src + 'js/**/*.js').on('error', swallowError)
         .pipe(deporder())
         .pipe(concat('main.js'))
 
