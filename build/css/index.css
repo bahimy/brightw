@@ -597,9 +597,14 @@ h6 {
   border-radius: 0.3em;
   -webkit-box-shadow: 1px 1px 3px #bfbfbf;
           box-shadow: 1px 1px 3px #bfbfbf;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 .pagination__arrow {
+  font-family: fontawesome;
   text-decoration: none;
   display: block;
   width: 1.4em;
@@ -660,7 +665,8 @@ h6 {
     margin-bottom: 0.8em; }
 
 .l-root {
-  height: 100%; }
+  height: 100%;
+  background-image: url("../images/grill.png"); }
 
 .l-body {
   padding-top: 50px; }
