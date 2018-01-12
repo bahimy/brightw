@@ -3,10 +3,6 @@
   background-image: url("../images/grill.png");
 }
 
-.l-body {
-  padding-top: 50px;
-}
-
 
 
 
@@ -17,10 +13,11 @@
   background-color: $color-canvas;
   box-shadow: 0px 0px 10px $color-faint;
   height: 80px;
+  margin-top: 80px;
 }
 
 .l-navbar__container {
-  width: 1024px;
+  max-width: 1024px;
   height: 80px;
   margin: 0 auto;
 }
@@ -32,6 +29,7 @@
 
 .l-navbar__logo {
   float: left;
+  display: block;
   margin-top: -20px;
   margin-left: -20px;
   width: 120px;
@@ -63,6 +61,43 @@
   float: right;
   margin-top: 0.7em;
 }
+
+  /* Medias */
+
+@media screen and (max-width: 1100px) {
+  .l-navbar {
+    // margin-top: 170px;
+    padding-top: 1px;
+    margin-top: 0;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .l-navbar__container {
+    height: auto;
+    max-width: 1100;
+  }
+
+  .l-navbar__links {
+    margin: 0 auto;
+  }
+
+  .l-navbar__logo {
+    float: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    background-size: 55px, auto, auto;
+  }
+
+  .l-buttons {
+    margin: 0;
+    float: none;
+    text-align: center;
+  }
+}
+
 
 
 

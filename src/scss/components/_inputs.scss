@@ -100,3 +100,11 @@
   margin: 0;
   width: 13%;
 }
+
+  /* Medias */
+
+@media screen and (max-width: 1100px) {
+  .button--social {
+    font-size: $text-epsilon;
+  }
+}
