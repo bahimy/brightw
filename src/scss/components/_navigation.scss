@@ -40,6 +40,7 @@
   padding-bottom: 0.4em;
   color: $color-basic;
   letter-spacing: 0.05em;
+  border-bottom: 1px solid transparent;
 
   &:hover {
     border-bottom: 1px solid $color-accent;
@@ -58,12 +59,29 @@
   /* medias */
 
 @media screen and (max-width: 1100px) {
+  .navmenu__item--main {
+    margin-bottom: .2em;
+    margin-top: 1em;
+  }
+
   .navmenu--header {
     margin-right: 0;
   }
 
   .navmenu--header {
     // background-color: blue;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navmenu__item--main {
+    font-size: $text-epsilon;
+    padding: 0;
+    margin: 0 .2em .5em .2em;
+  }
+
+  .navmenu--header {
+    padding-top: 1.5em;
   }
 }
 

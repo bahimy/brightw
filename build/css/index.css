@@ -467,7 +467,8 @@ h6 {
   margin: 0.5em 0.5em 0.6em;
   padding-bottom: 0.4em;
   color: #737373;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid transparent; }
   .navmenu__item--main:hover {
     border-bottom: 1px solid #d42819; }
 
@@ -764,6 +765,9 @@ strong {
   margin-bottom: 1.5em; }
 
 @media screen and (max-width: 1100px) {
+  .navmenu__item--main {
+    margin-bottom: .2em;
+    margin-top: 1em; }
   .navmenu--header {
     margin-right: 0; }
   .button--social {
@@ -775,9 +779,11 @@ strong {
     background-color: transparent; }
   .l-navbar__container {
     height: auto;
-    max-width: 1100; }
+    max-width: 1100px; }
   .l-navbar__links {
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(transparent));
+    background-image: linear-gradient(to top, white, transparent); }
   .l-navbar__logo {
     float: none;
     margin: 0 auto;
@@ -789,3 +795,11 @@ strong {
     margin: 0;
     float: none;
     text-align: center; } }
+
+@media screen and (max-width: 640px) {
+  .navmenu__item--main {
+    font-size: 1.582em;
+    padding: 0;
+    margin: 0 .2em .5em .2em; }
+  .navmenu--header {
+    padding-top: 1.5em; } }
