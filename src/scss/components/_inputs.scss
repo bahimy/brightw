@@ -91,10 +91,11 @@
 }
 
 .form__submit {
+  text-align: center;
   font-style: italic;
   color: $color-accent;
   background-color: rgba($color-strong, .2);
-  padding: 0.5em;
+  padding: 0.5em 0;
   border-width: 2px;
   border-style: inset;
   margin: 0;

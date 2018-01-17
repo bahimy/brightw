@@ -19,3 +19,17 @@
   }
 
 }
+
+/* Medias */
+
+@media screen and (max-width: 789px) {
+  .searched-list {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .searched-list {
+    column-count: 2;
+  }
+}

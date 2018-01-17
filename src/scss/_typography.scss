@@ -29,3 +29,17 @@ strong {
   padding: 1em 0;
   margin-bottom: 1.5em;
 }
+
+  /* Medias */
+
+@media screen and (max-width: 640px) {
+  .header--prima {
+    font-size: $text-gamma;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header--prima {
+    font-size: $text-delta;
+  }
+}

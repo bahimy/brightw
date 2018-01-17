@@ -107,11 +107,16 @@
 ////// Showcase section //////
 
 .l-prescont {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   margin-top: 3em;
   padding-bottom: 7em;
 }
+
+.l-prescont__container {
+  padding: 0 1em;
+}
+
 
 
 
@@ -120,7 +125,7 @@
 ////// Information section //////
 
 .l-info {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   padding-bottom: 6em;
   border-bottom: 1px solid $color-basic;
@@ -136,15 +141,49 @@
 
 }
 
+  /* Medias */
 
+@media screen and (max-width: 1024px) {
+  .l-info {
+    margin: 0 1em;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .l-info__column {
+    width: 30.666%;
+
+    &:nth-child(1n+2) {
+      margin-left: 4%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .l-info__column {
+    margin: 0 auto;
+    float: none;
+    width: 75%;
+
+    &:nth-child(n+2) {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .l-info__column {
+    width: 100%;
+  }
+}
 
 
 
 ////// Footer section //////
 
 .l-tail {
-  width: 1024px;
+  max-width: 1024px;
   text-align: right;
   margin: 0 auto;
-  padding: 1em 0 5em;
+  padding: 1em 1em 5em;
 }
